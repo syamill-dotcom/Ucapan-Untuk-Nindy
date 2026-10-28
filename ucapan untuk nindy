@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday! - Detective Conan Style</title>
+    <style>
+        /* Menggunakan Font bertema misteri/komputer modern */
+        @import url('https://googleapis.com');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: radial-gradient(circle, #1a2a6c, #b21f1f, #fdbb2d);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            padding: 20px;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Container Utama Kartu Ucapan */
+        .card-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            max-width: 450px;
+            width: 100%;
+            padding: 30px;
+            text-align: center;
+            border: 5px solid #22427c; /* Warna Biru Jas Conan */
+            position: relative;
+            transform: scale(0.9);
+            animation: popIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+
+        @keyframes popIn {
+            to { transform: scale(1); }
+        }
+
+        /* Bingkai Foto Conan */
+        .image-wrapper {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            border: 5px solid #e52521; /* Warna Merah Dasi Kupu-Kupu Conan */
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            background-color: #fff;
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Teks Ucapan */
+        .badge {
+            background-color: #22427c;
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            color: #1a2a6c;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .message {
+            color: #444;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        /* Detektif Hint / Kode Rahasia mini */
+        .detective-note {
+            font-family: 'Anonymous Pro', monospace;
+            background: #f4f4f4;
+            padding: 10px;
+            border-left: 4px solid #e52521;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Tombol Interaktif */
+        .btn-suprise {
+            background-color: #e52521;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(229, 37, 33, 0.4);
+        }
+
+        .btn-suprise:hover {
+            background-color: #bd1a17;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(229, 37, 33, 0.6);
+        }
+
+        /* Animasi Balon Hiasan */
+        .balloon {
+            position: absolute;
+            width: 30px;
+            height: 40px;
+            border-radius: 50%;
+            opacity: 0.3;
+            z-index: -1;
+            animation: floatUp 8s infinite linear;
+        }
+
+        @keyframes floatUp {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.6; }
+            90% { opacity: 0.6; }
+            100% { transform: translateY(-20vh) rotate(360deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Balon Dekorasi Latar Belakang -->
+    <div class="balloon" style="left: 10%; background: #e52521; animation-duration: 6s;"></div>
+    <div class="balloon" style="left: 30%; background: #22427c; animation-duration: 9s; animation-delay: 2s;"></div>
+    <div class="balloon" style="left: 70%; background: #fdbb2d; animation-duration: 7s; animation-delay: 1s;"></div>
+    <div class="balloon" style="left: 85%; background: #e52521; animation-duration: 11s;"></div>
+
+    <!-- Kartu Ucapan Utama -->
+    <div class="card-container">
+        <!-- Foto Conan -->
+        <div class="image-wrapper">
+            <!-- Kamu bisa mengganti URL src di bawah ini dengan link gambar Conan pilihanmu sendiri -->
+            <img src="https://cdn.phototourl.com/member/2026-10-28-86e3b5e1-2d5a-47f0-8e33-bb1f1e637a82.jpg" alt="Detective Conan">
+        </div>
+
+        <span class="badge">KASUS: HARI ULANG TAHUN 🕵️‍♂️</span>
+        
+        <!-- Silakan ganti nama [Nama Teman] di bawah ini -->
+        <h1>Selamat Ulang Tahun , Aniindyta Zahira!✨</h1>
+        
+        <div class="detective-note">
+            Status Kasus: TERPECAHKAN! ✔️<br>
+            Misteri bertambahnya umurmu hari ini berjalan sukses.
+        </div>
+
+        <!-- Tuliskan pesan personalmu di sini -->
+        <p class="message">
+            "Hanya ada satu kebenaran!" Dan kebenarannya adalah NINDY berhak mendapatkan hari terbaik dan kebahagiaan luar biasa di usia Nindy yang baru ini. Semoga semua impianya tercapai!
+        </p>
+
+        <!-- Tombol interaktif untuk memunculkan efek kejutan javascript bawaan -->
+        <button class="btn-suprise" onclick="showSurprise()">Klik Untuk Selidiki Kejutan!</button>
+    </div>
+
+    <script>
+        function showSurprise() {
+            alert("🎉 PEMBERITAHUAN DARI DETEKTIF: Selamat bertambah usia ya NINDY...! Nindy yang selalu tersenyum bahkan ketika hatinya murung, Nindy yang membawa keceriaan untuk orang lain padahal dirinya sedang gelisah. Kamu keren banget lho Nindy...aku berharap Nindy menjadi gadis yang baiq akal budinya, yang berhasil membahagiakan ayah dan ibu. Semoga harimu dipenuhi keseruan dan teka-teki kehidupanmu terselesaikan dengan bahagia! Aku doain semoga umur nindy berkah, panjang umur, sehat dan dilindungi oleh ALLAH selalu. Semoga pipi Nindy gak terlalu chubby, yang sekarang suda imuppp. Selamat ulang tahun :3 🎂✨");
+        }
+    </script>
+
+</body>
+</html>
